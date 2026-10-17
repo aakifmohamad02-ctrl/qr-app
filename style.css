@@ -1,0 +1,104 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #262a2f;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 220px;
+
+}
+
+
+.container {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    background: #fff;
+    padding: 25px 35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+
+}
+
+.container p {
+    font-size: 25px;
+    margin-bottom: 8px;
+    font-weight: 500;
+
+}
+
+.container input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #494eea;
+    outline: 0;
+    border-radius: 5px;
+    margin: 10px 0 20px;
+}
+
+.container .generate {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background: #494eea;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+
+}
+
+#imgbox {
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#imgbox img {
+    width: 100%;
+    padding: 10px;
+
+}
+
+#imgbox.show-img {
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+
+
+}
+
+.download-clear {
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.download-clear .download {
+    background: #fff;
+    color: rgb(0, 203, 58);
+    border: 0;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.download-clear .clear {
+    background: #fff;
+    color: rgb(252, 0, 0);
+    border: 0;
+    padding: 2px;
+    border-radius: 5px;
+
+}
