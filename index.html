@@ -9,23 +9,29 @@
 </head>
 
 <body>
-    <h1>QR Code Generator</h1>
-    <div class="container">
-        <p>Enter your link or text</p>
-        <input type="text" id="qrtext" placeholder="Enter your link or text">
+    <main class="app-shell">
+        <header class="page-header">
+            <span class="eyebrow">QUICK. SIMPLE. SHAREABLE.</span>
+            <h1>QR Code Generator</h1>
+            <p>Turn any link or message into a QR code in seconds.</p>
+        </header>
 
-        <div id="imgbox">
-            <img src="" id="qrimg" alt="">
-        </div>
+        <section class="container" aria-label="QR code generator">
+            <label for="qrtext">Your link or text</label>
+            <input type="text" id="qrtext" placeholder="https://example.com" autocomplete="url">
 
-        <button onclick="generate_qr()" class="generate">Generate</button>
+            <div id="imgbox" aria-live="polite">
+                <img src="" id="qrimg" alt="Generated QR code">
+            </div>
 
-        <div class="download-clear">
-            <button onclick="clear_qr()" class="clear">Clear</button>
-            <button onclick="download_qr()" class="download">Download</button>
+            <button type="button" onclick="generate_qr()" class="generate">Generate QR code</button>
 
-        </div>
-    </div>
+            <div class="download-clear">
+                <button type="button" onclick="clear_qr()" class="clear">Clear</button>
+                <button type="button" onclick="download_qr()" class="download">Download</button>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="script.js"></script>
 
